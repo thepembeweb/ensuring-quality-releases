@@ -10,7 +10,7 @@ variables:
   value: 'ubuntu-latest' 
 
 - name: environmentName
-  value: 'Test'
+  value: 'TEST'
 
 stages:
 - stage: Build
@@ -44,11 +44,11 @@ stages:
       inputs:
         provider: 'azurerm'
         command: 'init'
-        backendServiceArm: '$(service_name)'
-        backendAzureRmResourceGroupName: '$(resource_group_name)'
-        backendAzureRmStorageAccountName: '$(storage_account_name)'
-        backendAzureRmContainerName: '$(container_name)'
-        backendAzureRmKey: '$(key)'
+        backendServiceArm: '$(SERVICE_NAME)'
+        backendAzureRmResourceGroupName: '$(RESOURCE_GROUP_NAME)'
+        backendAzureRmStorageAccountName: '$(STORAGE_ACCOUNT_NAME)'
+        backendAzureRmContainerName: '$(CONTAINER_NAME)'
+        backendAzureRmKey: '$(KEY)'
         workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/environments/test'
     - task: TerraformTaskV1@0
       displayName: 'Terraform Apply'
@@ -58,7 +58,7 @@ stages:
         commandOptions: |
          -auto-approve 
         workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/environments/test'
-        environmentServiceNameAzureRM: '$(service_name)'
+        environmentServiceNameAzureRM: '$(SERVICE_NAME)'
 
 - stage: Artifacts
   displayName: Artifacts
@@ -101,8 +101,8 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Deploy Azure Web App'
             inputs:
-              azureSubscription: '$(service_name)'
-              appName: '$(appName)'
+              azureSubscription: '$(SERVICE_NAME)'
+              appName: '$(APP_NAME)'
               appType: webApp
               package: $(Pipeline.Workspace)/drop-fakerestapi/$(Build.BuildId)-fakerestapi.zip
   - deployment: VMDeploy
