@@ -108,6 +108,7 @@ stages:
     environment:
       name:  $(environmentName)
       resourceType: VirtualMachine
+      tags: myVM
     strategy:
       runOnce:
         deploy:
