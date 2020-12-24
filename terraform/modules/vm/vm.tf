@@ -23,7 +23,7 @@ resource "azurerm_linux_virtual_machine" "main" {
 
   admin_ssh_key {
     username   = var.vm_admin_username
-    public_key = file("/home/vsts/work/_temp/id_rsa.pub")
+    public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDlviFcw23L6lccXK+fvOi2EV2xAm8e2YjyhwbZCEgrlunYe4Nj39+3nHpus/+yPAKNXrqIadpdDipKrWdDmJx6LGIG7Igjo353tbjWAm9mbbHvn+HtvimPSWodJPVrxQBOQGZwfr26RGQWwhg6LD9zM6zUn8vEAyuktQDZMY/kHVDz2oWGr05Dv8MPo6Wjh5dh/rQtQXOtCO0EVQxXumo516dwfRUWvMYy9xdBGTGnlH59P6VRoI9fb4Y5LpTgx2ZhTlobcpI/mhAkybWnPDfUkVg5ORKkL9nNKxfN49UKxWAt5leC+yuNNlLbTNBwJV59nNMRB8D7XUpo5Uz6Jq7PVhA4KzL2DXpyIpssK36CTdMADtx7chyTa05ypa1BPJmHaHJw3iCbjMQaR3Rx2LZCoKnnXJrBS2+aFxZL68sk0u9C2AE/6cdpvcFPynw4HdlRs9u0Giumdjekw5mw5oPYCrYaCrQZVvja6PV+lcARTpHSu3ZduhQ5slos3OzKha8= Pemberai@DESKTOP-RLH17JE"
   }
   os_disk {
     caching           = "ReadWrite"
