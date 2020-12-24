@@ -5,7 +5,7 @@ variables:
 - group: qa-vars
 
 - name: vmImageName
-  value: 'ubuntu-latest' 
+  value: 'hashicorp/terraform:0.13.5' 
 
 - name: environmentName
   value: 'TEST'
