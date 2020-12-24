@@ -17,7 +17,6 @@ resource "azurerm_linux_virtual_machine" "main" {
   resource_group_name = var.resource_group
   size                = "Standard_B1s"
   admin_username      = var.vm_admin_username
-  tags                = "myvm"
   network_interface_ids = [
     azurerm_network_interface.main.id,
   ]
@@ -35,5 +34,8 @@ resource "azurerm_linux_virtual_machine" "main" {
     offer     = "UbuntuServer"
     sku       = "18.04-LTS"
     version   = "latest"
+  }
+  tags = {
+    environment = "TEST"
   }
 }
