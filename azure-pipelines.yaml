@@ -5,7 +5,7 @@ variables:
 - group: qa-vars
 
 - name: vmImageName
-  value: 'hashicorp/terraform:0.13.5' 
+  value: 'ubuntu-latest' 
 
 - name: environmentName
   value: 'TEST'
@@ -36,7 +36,7 @@ stages:
     - task: TerraformInstaller@0
       displayName: Install Terraform
       inputs:
-        terraformVersion: '0.13.4'
+        terraformVersion: '0.13.5'
     - task: TerraformTaskV1@0
       displayName: 'Terraform Init'
       inputs:
