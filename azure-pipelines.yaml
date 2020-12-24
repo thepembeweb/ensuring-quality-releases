@@ -2,9 +2,7 @@ trigger:
 - none
 
 variables:
-- group: terraform-group
-
-- group: pl-group
+- group: qa-vars
 
 - name: vmImageName
   value: 'ubuntu-latest' 
