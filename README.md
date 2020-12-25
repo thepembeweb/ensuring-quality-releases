@@ -1,6 +1,6 @@
 ﻿# Azure Infrastructure Operations Project: Ensuring Quality Releases
 
-> This project develops and demonstrate the use of a variety of industry leading tools, especially Microsoft Azure, to create disposable test environments and run a variety of automated tests with the click of a button. Additionally, it shows how to monitor and provide insight into your application's behavior, and determine root causes by querying the application’s custom log files.
+> This project develops and demonstrates the use of a variety of industry leading tools, especially Microsoft Azure, to create disposable test environments and run a variety of automated tests with the click of a button. Additionally, it shows how to monitor and provide insight into your application's behavior, and determine root causes by querying the application’s custom log files.
 
 ![](terraform-with-microsoft-azure-logo.jpg)
 
