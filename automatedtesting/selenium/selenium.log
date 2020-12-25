@@ -1,0 +1,16 @@
+2020-12-25 14:32:15 - root - INFO - Starting the browser
+2020-12-25 14:32:18 - root - INFO - Browser started successfully. Navigating to the demo page to login
+2020-12-25 14:32:18 - root - INFO - Logging in with 'standard_user' with password 'secret_sauce'
+2020-12-25 14:32:18 - root - INFO - Test login success
+2020-12-25 14:32:18 - root - INFO - Adding 'Sauce Labs Backpack' to cart
+2020-12-25 14:32:18 - root - INFO - Adding 'Sauce Labs Bike Light' to cart
+2020-12-25 14:32:19 - root - INFO - Adding 'Sauce Labs Bolt T-Shirt' to cart
+2020-12-25 14:32:19 - root - INFO - Adding 'Sauce Labs Fleece Jacket' to cart
+2020-12-25 14:32:19 - root - INFO - Adding 'Sauce Labs Onesie' to cart
+2020-12-25 14:32:19 - root - INFO - Adding 'Test.allTheThings() T-Shirt (Red)' to cart
+2020-12-25 14:32:19 - root - INFO - Removing 'Sauce Labs Backpack' from cart
+2020-12-25 14:32:19 - root - INFO - Removing 'Sauce Labs Bike Light' from cart
+2020-12-25 14:32:19 - root - INFO - Removing 'Sauce Labs Bolt T-Shirt' from cart
+2020-12-25 14:32:19 - root - INFO - Removing 'Sauce Labs Fleece Jacket' from cart
+2020-12-25 14:32:19 - root - INFO - Removing 'Sauce Labs Onesie' from cart
+2020-12-25 14:32:19 - root - INFO - Removing 'Test.allTheThings() T-Shirt (Red)' from cart
